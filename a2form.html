@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Form</title>
+    <style>
+        input[type-text]{
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 4px;
+            background-color: white;
+        }
+        .data{
+            position: relative;
+            top: 50px;
+            
+        }
+        table{
+            margin:auto;
+
+            
+        }
+        h1{
+            justify-content: center;
+            text-align: center;
+            color: crimson;
+            text-shadow: 1px 1px;
+            position: relative;
+            left: 40px;
+        
+            
+        }
+        img{
+            position: absolute;
+            left: 440px;
+            top: -16px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="data" >
+
+    <form action="">
+
+        <table border="0">
+            <img src="/emp.jfif" height="45px" width="45px" alt="">
+            <h1>Employee Registration Form
+            </h1>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="radio" name="gender" value="Mr" id="mr" checked>
+                    <label for="mr">Mr</label>
+                    <input type="radio" name="gender" value="Mrs" id="mrs">
+                    <label for="mrs">Mrs</label>
+                    <input type="radio" name="gender" value="Ms" id="ms">
+                    <label for="ms">Ms</label>
+
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td> <input type="text" name="fname" id="fname" placeholder="First Name" size="15"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td><input type="text" name="lname" id="lname" placeholder="Last Name" size="15"></td>
+            </tr>
+            <tr>
+                <td><label for="Ad1">Mail Address1</label></td>
+                <td><input type="text" name="Ad1" id="Ad1" size="15"></td>
+            </tr>
+            <tr>
+                <td><label for="Ad2">Mail Address2</label></td>
+                <td><input type="text" name="Ad2" id="Ad2" size="15"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td> <input type="text" name="city" id="city" size="15"></td>
+            </tr>
+            <tr>
+                <td>  <label for="dpdn">State</label></td>
+                <td> <select name="state" id="state">
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat" selected>Gujarat</option>
+                    <option value="MP">MP</option>
+                    <option value="UP">UP</option>
+                 </select></td>
+            </tr>
+            <tr>
+                <td><label for="zip">Zip</label></td>
+                <td> <input type="text" name="zip" id="zip" size="15"></td>
+            </tr>
+            <tr>
+                <td> <label for="file">Upload Photo</label></td>
+                <td><input type="file" name="file" id="file" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-Mail</label></td>
+                <td><input type="email" name="email" id="email" size="25"></td>
+            </tr>
+            <tr>
+                <td> <label for="num">Mobile</label</td>
+                <td> <input type="text" id="num" name="num" placeholder="+91" size="15"></td>
+            </tr>
+            <tr>
+                <td> <label>Language known</label></td>
+                <td> <input type="checkbox" name="l1" id="l1" value="guj" checked>
+                    <label for="l1">Gujarati</label><br>
+           
+                    <input type="checkbox" name="l2" id="l2" value="marathi" checked>
+                    <label for="l2">marathi</label><br>
+           
+                    <input type="checkbox" name="l3" id="l3" value="eng" checked>
+                    <label for="l3">English</label><br>
+                    <input type="checkbox" name="l4" id="l4" value="hindi">
+                    <label for="l4">Hindi</label></td>
+            </tr>
+            <tr>
+                <td><label for="info">Additional information</label></td>
+                <td><textarea name="message" rows="4" cols="20" placeholder="optional"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <input type="submit" value="submit">
+                    <input type="reset" value="reset"></td>
+            </tr>
+
+        </table>
+
+    </form>
+</div>
+</body>
+</html>
